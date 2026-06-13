@@ -1,0 +1,590 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="application/vnd.ms-word; charset=utf-8">
+<meta name="ProgId" content="Word.Document">
+<title>Sprint Backlog — SmartMaint L.C PROD</title>
+<style>
+@page WordSection1 { size: 21cm 29.7cm; margin: 2cm 2cm 2cm 2cm; }
+div.WordSection1 { page: WordSection1; }
+body { font-family: 'Calibri', sans-serif; font-size: 11pt; color: #222; line-height: 1.45; }
+h1 { font-family: 'Calibri Light', sans-serif; color: #1e40af; font-size: 26pt; margin-bottom: 8pt; border-bottom: 3pt solid #3b82f6; padding-bottom: 6pt; }
+h2 { font-family: 'Calibri Light', sans-serif; color: #1e40af; font-size: 17pt; margin-top: 18pt; margin-bottom: 6pt; border-left: 4pt solid #3b82f6; padding-left: 10pt; }
+h3 { font-family: 'Calibri', sans-serif; color: #1e3a8a; font-size: 13pt; margin-top: 12pt; margin-bottom: 4pt; }
+h4 { font-size: 11pt; color: #334155; margin-top: 10pt; margin-bottom: 3pt; }
+p { margin-top: 4pt; margin-bottom: 4pt; }
+table { border-collapse: collapse; width: 100%; font-size: 9.5pt; margin-top: 6pt; margin-bottom: 12pt; }
+th { background: #1e40af; color: white; padding: 6pt; border: 1px solid #1e40af; text-align: left; font-weight: 700; }
+td { padding: 5pt 7pt; border: 1px solid #cbd5e1; vertical-align: top; }
+tr.alt td { background: #f8fafc; }
+.id { font-weight: 700; color: #1e40af; font-family: 'Consolas', monospace; }
+.status-done { background: #f0fdf4; color: #15803d; font-weight: 700; padding: 1pt 6pt; border-radius: 8pt; font-size: 8.5pt; }
+.priority-must { background: #fef2f2; color: #991b1b; font-weight: 700; padding: 1pt 6pt; border-radius: 8pt; font-size: 8.5pt; }
+.priority-should { background: #fffbeb; color: #92400e; font-weight: 700; padding: 1pt 6pt; border-radius: 8pt; font-size: 8.5pt; }
+.priority-could { background: #f0f9ff; color: #1e3a8a; font-weight: 700; padding: 1pt 6pt; border-radius: 8pt; font-size: 8.5pt; }
+.effort { font-weight: 700; color: #334155; }
+.label { color: #64748b; font-size: 9.5pt; }
+.cover-title { font-size: 36pt; font-weight: 300; color: #1e40af; margin-top: 80pt; margin-bottom: 6pt; letter-spacing: -1pt; }
+.cover-sub { font-size: 18pt; color: #475569; font-weight: 300; margin-bottom: 60pt; }
+.cover-table { width: 60%; font-size: 12pt; }
+.cover-table td { padding: 6pt 10pt; border: none; }
+.cover-table td:first-child { color: #64748b; width: 35%; }
+.cover-table td:last-child { font-weight: 600; color: #1e293b; }
+.sprint-box { border: 1pt solid #cbd5e1; padding: 14pt 18pt; margin: 14pt 0; border-left: 5pt solid #3b82f6; background: #f8fafc; }
+.sprint-header { font-size: 16pt; color: #1e40af; font-weight: 700; margin: 0 0 4pt 0; }
+.sprint-meta { color: #64748b; font-size: 10pt; margin-bottom: 8pt; }
+.sprint-goal { background: white; border-left: 3pt solid #f59e0b; padding: 8pt 12pt; margin: 8pt 0; font-style: italic; }
+.task-list { background: white; border: 1pt solid #e2e8f0; padding: 8pt 12pt; margin: 6pt 0; border-radius: 4pt; }
+.task-list ul { margin: 4pt 0; padding-left: 20pt; }
+.retro { background: #fff7ed; border-left: 3pt solid #ea580c; padding: 8pt 12pt; margin-top: 10pt; font-size: 10pt; }
+.retro strong { color: #c2410c; }
+.page-break { page-break-before: always; }
+ul { margin-top: 4pt; margin-bottom: 8pt; }
+li { margin-bottom: 2pt; }
+code { background: #e2e8f0; padding: 1pt 4pt; border-radius: 2pt; font-family: 'Consolas', monospace; font-size: 9.5pt; }
+.kpi-row { display: table; width: 100%; margin: 8pt 0; }
+.kpi-cell { display: table-cell; width: 33%; padding: 6pt; text-align: center; border: 1pt solid #e2e8f0; background: #f8fafc; }
+.kpi-value { font-size: 22pt; font-weight: 700; color: #1e40af; }
+.kpi-label { font-size: 9pt; color: #64748b; text-transform: uppercase; letter-spacing: 0.5pt; }
+</style>
+</head>
+<body>
+<div class="WordSection1">
+
+<!-- ============ COVER PAGE ============ -->
+<div style="text-align: center;">
+<div class="cover-title">Sprint Backlog</div>
+<div class="cover-sub">SmartMaint &mdash; L.C PROD</div>
+
+<table class="cover-table" style="margin: 0 auto;">
+<tr><td>Projet</td><td>SmartMaint &mdash; L.C PROD</td></tr>
+<tr><td>Méthodologie</td><td>Scrum</td></tr>
+<tr><td>Sprints réalisés</td><td>12 sprints</td></tr>
+<tr><td>User stories livrées</td><td>61</td></tr>
+<tr><td>Durée totale</td><td>~ 24 semaines (2 semaines / sprint)</td></tr>
+<tr><td>Vélocité moyenne</td><td>~ 5 stories / sprint</td></tr>
+<tr><td>Version document</td><td>1.0</td></tr>
+<tr><td>Date</td><td>Mai 2026</td></tr>
+</table>
+</div>
+
+<!-- ============ OVERVIEW ============ -->
+<div class="page-break"></div>
+<h1>1. Vue d'ensemble des sprints</h1>
+
+<div class="kpi-row">
+<div class="kpi-cell">
+<div class="kpi-value">12</div>
+<div class="kpi-label">Sprints réalisés</div>
+</div>
+<div class="kpi-cell">
+<div class="kpi-value">61</div>
+<div class="kpi-label">User stories livrées</div>
+</div>
+<div class="kpi-cell">
+<div class="kpi-value">100 %</div>
+<div class="kpi-label">Definition of Done</div>
+</div>
+</div>
+
+<h3>Synthèse des sprints</h3>
+<table>
+<tr><th>Sprint</th><th>Objectif</th><th>Stories</th><th>Effort total</th><th>Statut</th></tr>
+<tr><td><span class="id">S1</span></td><td>Foundation : CRUD machines / techniciens / interventions / pièces</td><td>US-005, US-007, US-012, US-025</td><td class="effort">M+M+S+M</td><td><span class="status-done">Terminé</span></td></tr>
+<tr class="alt"><td><span class="id">S2</span></td><td>Authentification Supabase + synchronisation temps réel multi-poste</td><td>US-001, US-002, US-003, US-004, US-045</td><td class="effort">M+XS+M+L+M</td><td><span class="status-done">Terminé</span></td></tr>
+<tr><td><span class="id">S3</span></td><td>Approvisionnement SAP-style (PR &rarr; RFQ &rarr; Devis &rarr; PO &rarr; GRN)</td><td>US-018, US-019, US-020, US-021, US-022, US-024</td><td class="effort">M&times;6</td><td><span class="status-done">Terminé</span></td></tr>
+<tr class="alt"><td><span class="id">S4</span></td><td>Pilotage admin : dashboard, TRS/OEE, synoptique, salle contrôle, rapports, énergie</td><td>US-006, US-038, US-039, US-041, US-042, US-043, US-044, US-060, US-061</td><td class="effort">L+L+L+L+M+M+M+S+S</td><td><span class="status-done">Terminé</span></td></tr>
+<tr><td><span class="id">S5</span></td><td>Conformité HACCP, étalonnage, check-lists, audit, plans préventifs, alertes</td><td>US-013, US-014, US-026, US-027, US-028, US-029, US-030, US-053</td><td class="effort">M&times;8</td><td><span class="status-done">Terminé</span></td></tr>
+<tr class="alt"><td><span class="id">S6</span></td><td>Interface opérateur Arabe RTL (panic + qualité + dashboard)</td><td>US-046, US-047, US-048</td><td class="effort">L+L+M</td><td><span class="status-done">Terminé</span></td></tr>
+<tr><td><span class="id">S7</span></td><td>Interface technicien (scanner, planning, rapport voice, KB, prédictif)</td><td>US-008, US-009, US-011, US-017, US-034</td><td class="effort">L+L+M+L+M</td><td><span class="status-done">Terminé</span></td></tr>
+<tr class="alt"><td><span class="id">S8</span></td><td>Sécurité &amp; continuité : LOTO, carnet de quart, lots de production</td><td>US-031, US-033, US-035</td><td class="effort">M+M+M</td><td><span class="status-done">Terminé</span></td></tr>
+<tr><td><span class="id">S9</span></td><td>Déploiement Windows : Inno Setup, launcher C#, UpdateNotifier, sidebar groupée</td><td>US-054, US-055, US-056, US-057</td><td class="effort">M+L+S+M</td><td><span class="status-done">Terminé</span></td></tr>
+<tr class="alt"><td><span class="id">S10</span></td><td>Techniciens avancés : stats, demande pièce, préventif depuis intervention, procédure, habilitations, photo avant</td><td>US-010, US-015, US-016, US-023, US-032, US-040</td><td class="effort">XS+S+M+S+M+S</td><td><span class="status-done">Terminé</span></td></tr>
+<tr><td><span class="id">S11</span></td><td>Opérateurs avancés + tutoriel interactif + UX polish</td><td>US-036, US-037, US-049, US-050, US-051, US-052, US-058, US-059</td><td class="effort">S+M+S+S+M+M+L+XS</td><td><span class="status-done">Terminé</span></td></tr>
+<tr class="alt"><td><span class="id">S12</span></td><td>QA finale : portail Modal/SlideOver, fix zoom tutoriel, audit CRUD</td><td>Stories techniques / bugfix</td><td class="effort">S+S+M</td><td><span class="status-done">Terminé</span></td></tr>
+</table>
+
+<!-- ============ SPRINT 1 ============ -->
+<div class="page-break"></div>
+<h1>2. Détail des sprints</h1>
+
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 1 &mdash; Foundation maintenance</h3>
+<p class="sprint-meta">Durée : 2 semaines &nbsp;&middot;&nbsp; Capacity : 5 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Disposer d'un noyau GMAO fonctionnel : machines, interventions correctives, techniciens, pièces de rechange &mdash; en CRUD complet avec données mockées.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-005</span></td><td>CRUD machines avec QR code</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-007</span></td><td>CRUD interventions &amp; assignation</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-012</span></td><td>Suivi état machine (auto-statut)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-025</span></td><td>CRUD pièces de rechange + seuils</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Setup Next.js 16 App Router + TypeScript strict</li>
+<li>Définition types <code>Machine</code>, <code>Intervention</code>, <code>Technician</code>, <code>SparePart</code></li>
+<li>Création pages <code>/machines</code>, <code>/machines/[id]</code>, <code>/interventions</code>, <code>/spare-parts</code>, <code>/technicians</code></li>
+<li>Implémentation seed data <code>lib/data.ts</code></li>
+<li>Composants UI : <code>Modal</code>, <code>Toast</code>, <code>Header</code>, <code>Sidebar</code></li>
+<li>Calculs MTBF/MTTR via <code>lib/calculations.ts</code></li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Foundation solide. Patterns établis pour les sprints suivants : (1) types &rarr; (2) data mock &rarr; (3) pages &rarr; (4) composants. À reprendre : mise en cache des données pour les pages lourdes.
+</div>
+</div>
+
+<!-- ============ SPRINT 2 ============ -->
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 2 &mdash; Auth Supabase + Realtime sync</h3>
+<p class="sprint-meta">Durée : 2 semaines &nbsp;&middot;&nbsp; Capacity : 7 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Migrer du mock vers un backend Supabase complet, avec authentification multi-rôle et synchronisation temps réel multi-poste.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-001</span></td><td>Login email/password multi-rôle</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-002</span></td><td>Logout</td><td class="effort">XS</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-003</span></td><td>Profil utilisateur (slide-over)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-004</span></td><td>Sync temps réel 30+ tables</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-045</span></td><td>Gestion personnel (admin)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Setup Supabase : projet, tables, RLS, grants, publication realtime</li>
+<li>Migration <code>schema.sql</code> : machines, technicians, interventions, spare_parts, suppliers, purchase_orders</li>
+<li>Implémentation <code>AuthContext</code> + <code>DataContext</code> avec subscriptions</li>
+<li>Refactor <code>lib/db.ts</code> avec wrappers <code>makeCrud&lt;T&gt;</code> + <code>auditWrap</code></li>
+<li>Login page + redirection par rôle</li>
+<li>Composant <code>UserProfile</code> via <code>SlideOver</code></li>
+<li><code>syncStaticArrays()</code> pour compatibilité avec <code>lib/calculations.ts</code></li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Realtime est magique &mdash; modification chez un user apparaît chez les autres en &lt; 1 sec. Apprentissage : <code>postgres_changes</code> nécessite l'ajout de chaque table à la publication <code>supabase_realtime</code> et grant sur le rôle <code>authenticated</code>.
+</div>
+</div>
+
+<!-- ============ SPRINT 3 ============ -->
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 3 &mdash; Approvisionnement SAP-style</h3>
+<p class="sprint-meta">Durée : 2 semaines &nbsp;&middot;&nbsp; Capacity : 6 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Implémenter un workflow d'achat complet inspiré de SAP MM : demande &rarr; appel d'offres &rarr; comparaison devis &rarr; bon de commande &rarr; réception.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-018</span></td><td>Demande d'achat multi-lignes</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-019</span></td><td>Appel d'offres multi-fournisseurs</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-020</span></td><td>Saisie + comparaison devis</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-021</span></td><td>Bon de commande + workflow approval</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-022</span></td><td>Réception (GRN)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-024</span></td><td>Catalogue fournisseurs</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Migrations <code>procurement-v2.sql</code> et <code>procurement-v3-itemized.sql</code></li>
+<li>Tables : <code>purchase_requisitions</code>, <code>purchase_requisition_lines</code>, <code>quote_requests</code>, <code>quote_request_lines</code>, <code>quotes</code>, <code>quote_lines</code>, <code>purchase_order_lines</code>, <code>goods_receipts</code></li>
+<li>Types <code>ApprovalStatus</code>, <code>RequisitionStatus</code>, <code>RFQStatus</code>, <code>QuoteStatus</code>, <code>POStatus</code>, <code>ReceiptCondition</code></li>
+<li>Pages <code>/spare-parts</code>, <code>/approvals</code> avec workflow états</li>
+<li>Logique de comparaison devis ligne par ligne</li>
+<li>Mise à jour automatique du stock après réception GRN</li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Le workflow SAP est complexe mais bien adapté aux usines. Patterns d'état machine identifiés : statuses validés &agrave; chaque transition (ex. PR ne peut passer de <em>brouillon</em> à <em>convertie</em> sans <em>soumise</em> &rarr; <em>approuvée</em>).
+</div>
+</div>
+
+<!-- ============ SPRINT 4 ============ -->
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 4 &mdash; Pilotage admin &amp; KPI</h3>
+<p class="sprint-meta">Durée : 2 semaines &nbsp;&middot;&nbsp; Capacity : 9 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Doter l'admin d'un poste de pilotage complet : dashboard global, TRS/OEE, synoptique, salle de contrôle, rapports, suivi énergétique, paramètres.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-006</span></td><td>Fiche détaillée machine + historique</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-038</span></td><td>Dashboard admin avec KPI globaux</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-039</span></td><td>TRS / OEE par machine</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-041</span></td><td>Synoptique usine (process)</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-042</span></td><td>Salle de contrôle (mur d'état)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-043</span></td><td>Suivi énergétique</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-044</span></td><td>Rapports analytiques (Pareto)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-060</span></td><td>Thème clair / sombre</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-061</span></td><td>Zoom interface (Ctrl+/-)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Composants <code>KPICard</code>, <code>TRSChart</code>, <code>SynoptiqueMap</code>, <code>ControlWall</code></li>
+<li>Bibliothèque graphique pour rapports (Recharts)</li>
+<li>Formule OEE = Disponibilité &times; Performance &times; Qualité avec drill-down</li>
+<li><code>ThemeContext</code> avec persistance localStorage</li>
+<li>Widget zoom dans Header avec 6 niveaux</li>
+<li>Maintenance prédictive : heuristique RUL basée historique interventions</li>
+<li>Recommandations contextuelles (machine X risque panne dans N j)</li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Le calcul OEE révèle la dépendance forte aux données de production &mdash; raison pour laquelle les lots de production seront livrés en S8. Le bug NaN du dashboard a été résolu par le pattern « two-stage render gate » (chartsReady useState).
+</div>
+</div>
+
+<!-- ============ SPRINT 5 ============ -->
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 5 &mdash; Conformité HACCP &amp; alertes</h3>
+<p class="sprint-meta">Durée : 2 semaines &nbsp;&middot;&nbsp; Capacity : 8 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Implémenter toute la couche conformité réglementaire de l'usine agroalimentaire : HACCP, étalonnage, check-lists, journal d'audit, plans préventifs, alertes email automatiques.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-013</span></td><td>Plans préventifs récurrents</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-014</span></td><td>Génération auto des OT préventifs</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-026</span></td><td>Réapprovisionnement auto stock</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-027</span></td><td>Contrôles HACCP (CRUD)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-028</span></td><td>Étalonnage instruments + alertes</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-029</span></td><td>Check-lists OT (modèles &amp; runs)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-030</span></td><td>Journal d'audit immuable</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-053</span></td><td>Alertes email (Resend)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Migrations : <code>maintenance-plans.sql</code>, <code>haccp-checklists.sql</code>, <code>audit-calibration.sql</code></li>
+<li>Tables : <code>maintenance_plans</code>, <code>haccp_records</code>, <code>checklist_templates</code>, <code>checklist_runs</code>, <code>calibration_records</code>, <code>audit_log</code></li>
+<li>Composant <code>AlertWatcher</code> background admin-only</li>
+<li>Intégration Resend API pour emails (alertes stock, digest hebdomadaire)</li>
+<li>Pattern <code>auditWrap</code> appliqué à toutes les opérations CRUD</li>
+<li>Pages <code>/haccp</code>, <code>/calibration</code>, <code>/checklists</code>, <code>/audit</code>, <code>/alertes</code></li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Le pattern <code>auditWrap</code> est élégant &mdash; un seul HOF qui ajoute le log d'audit à n'importe quel CRUD. Tous les sprints suivants en bénéficient gratuitement.
+</div>
+</div>
+
+<!-- ============ SPRINT 6 ============ -->
+<div class="page-break"></div>
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 6 &mdash; Interface opérateur RTL Arabe</h3>
+<p class="sprint-meta">Durée : 2 semaines &nbsp;&middot;&nbsp; Capacity : 3 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Livrer une interface opérateur radicalement simple, en arabe RTL, avec gros boutons utilisables sans formation par un personnel à faible littératie numérique.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-046</span></td><td>Tableau de bord opérateur (arabe RTL)</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-047</span></td><td>Bouton panique &mdash; déclaration de panne 3 étapes</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-048</span></td><td>Signalement défaut qualité avec photo</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Système d'i18n : <code>lib/translations.ts</code> avec FR/EN/AR</li>
+<li>Direction RTL via attribut <code>dir="rtl"</code> sur le root</li>
+<li>Forçage de la langue par rôle dans <code>AppShell</code> (operator &rarr; ar)</li>
+<li>Pages <code>/operator/dashboard</code> et <code>/operator/report-breakdown</code></li>
+<li>Composant <code>QualityDefectModal</code> avec capture caméra</li>
+<li>Wizard panique 3 étapes : machine &rarr; symptôme &rarr; photo + envoi</li>
+<li>Composant <code>CameraCapture</code> réutilisable</li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Validation terrain : un opérateur sans formation a réussi à signaler une panne au premier essai en moins de 20 sec. Gros boutons + iconographie expressive = clé.
+</div>
+</div>
+
+<!-- ============ SPRINT 7 ============ -->
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 7 &mdash; Interface technicien (scanner, voice, KB)</h3>
+<p class="sprint-meta">Durée : 2 semaines &nbsp;&middot;&nbsp; Capacity : 5 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Donner au technicien tous ses outils de terrain : Kanban OT, rapport d'intervention avec chrono / dictée vocale offline / photos, scanner QR, base de connaissances, prédictif.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-008</span></td><td>Rapport d'intervention chrono + photos</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-009</span></td><td>Dictée vocale Whisper offline (FR)</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-011</span></td><td>Scanner QR machine</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-017</span></td><td>Maintenance prédictive (RUL)</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-034</span></td><td>Base de connaissances CRUD</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Bundling Whisper-small.fr (240 Mo) dans <code>public/models/</code> &mdash; transcription offline complète</li>
+<li>API route <code>/api/transcribe</code> + fonction <code>transcribeBlob</code></li>
+<li><code>MediaRecorder</code> pour capture audio + transcription auto sur stop</li>
+<li>jsQR pour décodage QR local (dynamic import ~20 Ko)</li>
+<li>Pages <code>/technician/dashboard</code> (Kanban), <code>/technician/report</code>, <code>/technician/scanner</code>, <code>/technician/planning</code>, <code>/technician/inventory</code>, <code>/knowledge</code></li>
+<li>Chrono d'intervention persisté en localStorage</li>
+<li>Composant <code>QRScanner</code> avec fallback fichier</li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Whisper offline est le différenciateur clé &mdash; permet la dictée même en sous-sol/atelier sans réseau. Quelques itérations sur le QR scanner (caméra qui ne s'affiche pas) résolues en simplifiant l'init et en ajoutant le fallback fichier.
+</div>
+</div>
+
+<!-- ============ SPRINT 8 ============ -->
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 8 &mdash; Sécurité &amp; continuité</h3>
+<p class="sprint-meta">Durée : 1 semaine &nbsp;&middot;&nbsp; Capacity : 3 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Livrer les 3 fonctionnalités identifiées comme manquantes pour la sécurité et la continuité 3&times;8 : LOTO digital, carnet de quart, lots de production HACCP.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-031</span></td><td>LOTO digital (consignation machines) &mdash; T3</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-033</span></td><td>Carnet de quart 3&times;8 &mdash; T1</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-035</span></td><td>Lots de production HACCP &mdash; O1</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Migration <code>shift-batches-loto.sql</code> &mdash; 3 nouvelles tables idempotentes</li>
+<li>Types : <code>LotoRecord</code>, <code>ShiftNote</code>, <code>ShiftNotePriority</code>, <code>ProductionBatch</code></li>
+<li>Pages <code>/loto</code>, <code>/handover</code>, <code>/production-batches</code></li>
+<li>Wrappers <code>lotoRecordsDb</code>, <code>shiftNotesDb</code>, <code>productionBatchesDb</code></li>
+<li>DataContext + realtime subscriptions pour les 3 tables</li>
+<li>Seed data (notes ouvertes, lot en cours, LOTO actif)</li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Sprint court mais à fort impact business &mdash; ces 3 features sont demandées par tous les industriels de l'agroalimentaire et étaient les premières «manques» du GMAO de base.
+</div>
+</div>
+
+<!-- ============ SPRINT 9 ============ -->
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 9 &mdash; Déploiement Windows &amp; UX</h3>
+<p class="sprint-meta">Durée : 2 semaines &nbsp;&middot;&nbsp; Capacity : 4 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Rendre l'app déployable et auto-mettable à jour sur n'importe quel poste Windows sans intervention IT, et restructurer la navigation pour gérer 25+ pages.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-054</span></td><td>Installeur Windows (Inno Setup)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-055</span></td><td>Launcher C# avec auto-update</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-056</span></td><td>UpdateNotifier in-app (banner)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-057</span></td><td>Sidebar groupée (modules + popovers)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Script Inno Setup : install per-user, no admin needed, inclus 240 Mo de model Whisper</li>
+<li><code>SmartMaintLauncher.cs</code> : compile avec csc.exe, vérifie remote version, télécharge zip si nouveau, applique avant de lancer node</li>
+<li><code>Publier la mise a jour.bat</code> : build &rarr; zip &rarr; upload Supabase Storage &rarr; update version.txt</li>
+<li>Composant <code>UpdateNotifier</code> : polling toutes les 60 sec, bannière bleue dismissible</li>
+<li>API routes <code>/api/version</code> et <code>/api/update-channel</code></li>
+<li>Refactor <code>Sidebar.tsx</code> avec items groupés et popovers hover (180 ms grace period)</li>
+<li>Translations FR/EN/AR pour les libellés de groupes</li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Le launcher C# est une vraie victoire opérationnelle &mdash; clients reçoivent les màj sans intervention humaine. Pour la sidebar, l'astuce du popover floating-right évite l'expansion du panneau qui aurait demandé du scroll.
+</div>
+</div>
+
+<!-- ============ SPRINT 10 ============ -->
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 10 &mdash; Techniciens avancés (T2-T8)</h3>
+<p class="sprint-meta">Durée : 2 semaines &nbsp;&middot;&nbsp; Capacity : 6 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Livrer toutes les fonctionnalités demandées par les techniciens : stats personnelles, raccourci demande de pièce, planification préventive depuis intervention, procédure guidée, habilitations, photo avant.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-010</span></td><td>Photo avant intervention (T8)</td><td class="effort">XS</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-015</span></td><td>Planifier préventif depuis intervention (T5)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-016</span></td><td>Procédure guidée pas-à-pas (T6)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-023</span></td><td>Raccourci demande de pièce (T4)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-032</span></td><td>Habilitations / certifications (T7)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-040</span></td><td>Mes statistiques personnelles (T2)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Migration <code>technician-operator-extras.sql</code> &mdash; 6 nouvelles tables + colonne <code>qualityPhotos</code> sur production_batches</li>
+<li>Pages <code>/technician/stats</code>, <code>/technician/procedure</code>, <code>/certifications</code></li>
+<li>Modal « Demander » dans <code>/technician/inventory</code></li>
+<li>Carte orange « Planifier un préventif » dans le success screen de rapport intervention</li>
+<li>Tag <code>phase: 'before'|'after'</code> sur les attachments + pastille visuelle AVANT/APRÈS</li>
+<li>Composant <code>VoiceDictationButton</code> réutilisable (factor extracted from /technician/report)</li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> 6 features livrées en un sprint &mdash; possible parce que les patterns sont stabilisés : schema &rarr; types &rarr; context &rarr; db.ts &rarr; page. La procédure runner (T6) est la plus impactante &mdash; transforme le KB d'un manuel à lire en outil exécutable.
+</div>
+</div>
+
+<!-- ============ SPRINT 11 ============ -->
+<div class="page-break"></div>
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 11 &mdash; Opérateurs avancés + Tutoriel interactif</h3>
+<p class="sprint-meta">Durée : 3 semaines &nbsp;&middot;&nbsp; Capacity : 8 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Compléter l'interface opérateur (compteur production, relais, EPI, consignes, photo qualité), livrer une vue admin pour les demandes opérateur, et construire un tutoriel interactif spotlight pour chaque rôle.
+</div>
+
+<h4>Stories assignées</h4>
+<table>
+<tr><th>ID</th><th>Story</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">US-036</span></td><td>Compteur production target vs réel (O2)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-037</span></td><td>Photos qualité par lot (O6) + suppression</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-049</span></td><td>Demande de relais (O3)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-050</span></td><td>Demande EPI / consommables (O4)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-051</span></td><td>Consignes du jour acquittables (O5)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-052</span></td><td>Demandes opérateurs (vue admin)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">US-058</span></td><td>Tutoriel interactif spotlight par rôle</td><td class="effort">L</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">US-059</span></td><td>Replay tutoriel (Settings + Profil)</td><td class="effort">XS</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<h4>Tasks techniques</h4>
+<div class="task-list">
+<ul>
+<li>Tables : <code>relief_requests</code>, <code>consumable_requests</code>, <code>directives</code>, <code>directive_acks</code> dans technician-operator-extras.sql</li>
+<li>Refonte <code>operator/dashboard</code> : bannière consigne, compteur batch +1/+10, boutons relais/EPI/qualité</li>
+<li>Pages <code>/directives</code>, <code>/operator-requests</code></li>
+<li>Vue opérateur arabe RTL pour <code>/production-batches</code> (rendu conditionnel par rôle)</li>
+<li>Composant <code>TutorialTour</code> : portail à <code>document.body</code>, spotlight 4-panneaux, popover flottant placement-adaptive</li>
+<li>Scripts d'étapes : 27 admin / 12 tech / 10 opérateur, avec navigation auto entre routes</li>
+<li>Compensation CSS zoom dans le calcul du rect</li>
+<li>RAF stabilization loop pour suivre framer-motion transition</li>
+</ul>
+</div>
+
+<div class="retro">
+<strong>Retrospective :</strong> Sprint le plus dense. Le tutoriel a demandé plusieurs itérations : (1) plain modal centré &rarr; (2) spotlight + selectors &rarr; (3) fix selectors qui pointaient vers des liens cachés dans des popovers &rarr; (4) compensation zoom &rarr; (5) expansion à chaque feature individuellement. Apprentissage clé : portail des modaux pour échapper aux contextes de stacking.
+</div>
+</div>
+
+<!-- ============ SPRINT 12 ============ -->
+<div class="sprint-box">
+<h3 class="sprint-header">Sprint 12 &mdash; QA finale &amp; corrections</h3>
+<p class="sprint-meta">Durée : 1 semaine &nbsp;&middot;&nbsp; Capacity : 4 SP</p>
+
+<div class="sprint-goal">
+<strong>Sprint Goal :</strong> Stabilisation finale : correction de bugs UX identifiés, portail systématique des composants modaux, audit statique de toutes les chaînes CRUD.
+</div>
+
+<h4>Tasks techniques (stories techniques)</h4>
+<table>
+<tr><th>ID</th><th>Tâche</th><th>Effort</th><th>Statut</th></tr>
+<tr><td><span class="id">TECH-01</span></td><td>Bug : drag-right affichait le profil &mdash; <code>overflow-x: hidden</code> sur html/body</td><td class="effort">XS</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">TECH-02</span></td><td>Bug : « Intervention Rapide » FAB paint sur le profil &mdash; portail SlideOver vers <code>document.body</code> (zIndex 9991)</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">TECH-03</span></td><td>Portail Modal vers <code>document.body</code> (zIndex 9992) &mdash; cohérence avec SlideOver</td><td class="effort">XS</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">TECH-04</span></td><td>Tutoriel : selectors invalides quand sidebar group est fermée &mdash; rerouter sur page anchors (data-tour="page-header")</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">TECH-05</span></td><td>Tutoriel : compensation zoom dans <code>readRect()</code> &mdash; divisé par zoom factor</td><td class="effort">XS</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">TECH-06</span></td><td>Tutoriel : expansion à toutes les fonctionnalités (27 admin / 12 tech / 10 op)</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">TECH-07</span></td><td>Audit statique CRUD : table &rarr; type &rarr; DataContext &rarr; db.ts &rarr; page pour 14 features</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr class="alt"><td><span class="id">TECH-08</span></td><td>Microphone Whisper dans le carnet de quart admin + tech &mdash; <code>VoiceDictationButton</code> réutilisable</td><td class="effort">S</td><td><span class="status-done">Done</span></td></tr>
+<tr><td><span class="id">TECH-09</span></td><td>Vue arabe RTL pour <code>/production-batches</code> opérateur</td><td class="effort">M</td><td><span class="status-done">Done</span></td></tr>
+</table>
+
+<div class="retro">
+<strong>Retrospective :</strong> Sprint dédié à la stabilité &mdash; aucune nouvelle feature. Audit statique a confirmé que les 14 features avec CRUD sont correctement câblées de bout en bout (DB &rarr; types &rarr; context &rarr; UI). Les bugs trouvés étaient tous UX, pas data.
+</div>
+</div>
+
+<!-- ============ DEFINITION OF DONE ============ -->
+<div class="page-break"></div>
+<h1>3. Definition of Done (rappel)</h1>
+
+<div class="sprint-box">
+<p>Pour chaque user story livrée dans les sprints ci-dessus, les critères suivants étaient vérifiés systématiquement :</p>
+<ul>
+<li><strong>Code</strong> : TypeScript strict sans erreur, type-check propre (<code>npx tsc --noEmit</code>)</li>
+<li><strong>Build</strong> : <code>npm run build</code> réussi, aucune route en erreur</li>
+<li><strong>Base de données</strong> : migration SQL idempotente avec <code>if not exists</code>, RLS activée, grants à <code>authenticated</code>, table ajoutée à la publication <code>supabase_realtime</code></li>
+<li><strong>Backend</strong> : wrapper CRUD dans <code>db.ts</code> via <code>makeCrud&lt;T&gt;</code>, audit via <code>auditWrap</code></li>
+<li><strong>Sync temps réel</strong> : table abonnée dans <code>DataContext.subscribe()</code>, state setter exposé au provider</li>
+<li><strong>UI</strong> : page rendue, formulaires avec validation, modal close handlers, traductions FR/EN/AR pour libellés</li>
+<li><strong>Tutoriel</strong> : tag <code>data-tour="..."</code> ajouté sur les éléments à spotlighter, step ajouté à <code>TutorialTour.tsx</code></li>
+<li><strong>Livraison</strong> : publication via <code>Publier la mise a jour.bat</code> (build &rarr; zip &rarr; Supabase Storage &rarr; version.txt)</li>
+<li><strong>Sidebar</strong> : nouveau lien placé dans le bon module (Maintenance / Conformité / Équipe / etc.) avec icône Lucide</li>
+</ul>
+</div>
+
+<h2>Synthèse vélocité</h2>
+
+<table>
+<tr><th>Sprint</th><th>Stories</th><th>Effort total estimé</th><th>Vélocité réelle</th></tr>
+<tr><td>S1</td><td>4</td><td>M+M+S+M</td><td>4 / 4 (100 %)</td></tr>
+<tr class="alt"><td>S2</td><td>5</td><td>M+XS+M+L+M</td><td>5 / 5 (100 %)</td></tr>
+<tr><td>S3</td><td>6</td><td>M&times;6</td><td>6 / 6 (100 %)</td></tr>
+<tr class="alt"><td>S4</td><td>9</td><td>L+L+L+L+M+M+M+S+S</td><td>9 / 9 (100 %)</td></tr>
+<tr><td>S5</td><td>8</td><td>M&times;8</td><td>8 / 8 (100 %)</td></tr>
+<tr class="alt"><td>S6</td><td>3</td><td>L+L+M</td><td>3 / 3 (100 %)</td></tr>
+<tr><td>S7</td><td>5</td><td>L+L+M+L+M</td><td>5 / 5 (100 %)</td></tr>
+<tr class="alt"><td>S8</td><td>3</td><td>M+M+M</td><td>3 / 3 (100 %)</td></tr>
+<tr><td>S9</td><td>4</td><td>M+L+S+M</td><td>4 / 4 (100 %)</td></tr>
+<tr class="alt"><td>S10</td><td>6</td><td>XS+S+M+S+M+S</td><td>6 / 6 (100 %)</td></tr>
+<tr><td>S11</td><td>8</td><td>S+M+S+S+M+M+L+XS</td><td>8 / 8 (100 %)</td></tr>
+<tr class="alt"><td>S12</td><td>9 tech</td><td>XS+S+XS+S+XS+M+S+S+M</td><td>9 / 9 (100 %)</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>61 US + 9 tech</strong></td><td><strong>~140 jours-homme estimés</strong></td><td><strong>100 %</strong></td></tr>
+</table>
+
+<p style="margin-top: 24pt; text-align: center; color: #94a3b8; font-size: 9pt;">&mdash; Fin du Sprint Backlog &mdash;</p>
+
+</div>
+</body>
+</html>

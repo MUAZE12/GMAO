@@ -1,0 +1,342 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="application/vnd.ms-word; charset=utf-8">
+<meta name="ProgId" content="Word.Document">
+<title>Product Backlog — SmartMaint L.C PROD</title>
+<style>
+@page WordSection1 { size: 21cm 29.7cm; margin: 2cm 2cm 2cm 2cm; }
+div.WordSection1 { page: WordSection1; }
+body { font-family: 'Calibri', sans-serif; font-size: 11pt; color: #222; line-height: 1.45; }
+h1 { font-family: 'Calibri Light', sans-serif; color: #1e40af; font-size: 26pt; margin-bottom: 8pt; border-bottom: 3pt solid #3b82f6; padding-bottom: 6pt; }
+h2 { font-family: 'Calibri Light', sans-serif; color: #1e40af; font-size: 17pt; margin-top: 18pt; margin-bottom: 6pt; border-left: 4pt solid #3b82f6; padding-left: 10pt; }
+h3 { font-family: 'Calibri', sans-serif; color: #1e3a8a; font-size: 13pt; margin-top: 12pt; margin-bottom: 4pt; }
+h4 { font-size: 12pt; color: #334155; margin-top: 10pt; margin-bottom: 3pt; }
+p { margin-top: 4pt; margin-bottom: 4pt; }
+table { border-collapse: collapse; width: 100%; font-size: 9.5pt; margin-top: 6pt; margin-bottom: 12pt; }
+th { background: #1e40af; color: white; padding: 6pt; border: 1px solid #1e40af; text-align: left; font-weight: 700; }
+td { padding: 5pt 7pt; border: 1px solid #cbd5e1; vertical-align: top; }
+tr.alt td { background: #f8fafc; }
+.epic-id { font-weight: 700; color: #1e40af; }
+.priority-must { background: #fef2f2; color: #991b1b; font-weight: 700; padding: 1pt 6pt; border-radius: 8pt; font-size: 8.5pt; }
+.priority-should { background: #fffbeb; color: #92400e; font-weight: 700; padding: 1pt 6pt; border-radius: 8pt; font-size: 8.5pt; }
+.priority-could { background: #f0f9ff; color: #1e3a8a; font-weight: 700; padding: 1pt 6pt; border-radius: 8pt; font-size: 8.5pt; }
+.status-done { background: #f0fdf4; color: #15803d; font-weight: 700; padding: 1pt 6pt; border-radius: 8pt; font-size: 8.5pt; }
+.status-future { background: #faf5ff; color: #6b21a8; font-weight: 700; padding: 1pt 6pt; border-radius: 8pt; font-size: 8.5pt; }
+.effort { font-weight: 700; color: #334155; }
+.label { color: #64748b; font-size: 9.5pt; }
+.cover-title { font-size: 36pt; font-weight: 300; color: #1e40af; margin-top: 80pt; margin-bottom: 6pt; letter-spacing: -1pt; }
+.cover-sub { font-size: 18pt; color: #475569; font-weight: 300; margin-bottom: 60pt; }
+.cover-table { width: 60%; font-size: 12pt; }
+.cover-table td { padding: 6pt 10pt; border: none; }
+.cover-table td:first-child { color: #64748b; width: 35%; }
+.cover-table td:last-child { font-weight: 600; color: #1e293b; }
+.box { border: 1pt solid #cbd5e1; background: #f8fafc; padding: 10pt 14pt; margin: 10pt 0; border-left: 4pt solid #3b82f6; }
+.persona { border: 1pt solid #cbd5e1; padding: 10pt 14pt; margin: 8pt 0; border-radius: 4pt; }
+.persona-admin { border-left: 4pt solid #3b82f6; background: #eff6ff; }
+.persona-tech { border-left: 4pt solid #f97316; background: #fff7ed; }
+.persona-op { border-left: 4pt solid #10b981; background: #f0fdf4; }
+ul { margin-top: 4pt; margin-bottom: 8pt; }
+li { margin-bottom: 2pt; }
+.page-break { page-break-before: always; }
+</style>
+</head>
+<body>
+<div class="WordSection1">
+
+<!-- ============ COVER PAGE ============ -->
+<div style="text-align: center;">
+<div class="cover-title">Product Backlog</div>
+<div class="cover-sub">SmartMaint &mdash; L.C PROD</div>
+
+<table class="cover-table" style="margin: 0 auto;">
+<tr><td>Projet</td><td>SmartMaint &mdash; L.C PROD</td></tr>
+<tr><td>Type</td><td>GMAO étendu (MOM &mdash; ISA-95) pour l'agroalimentaire</td></tr>
+<tr><td>Secteur client</td><td>Usine de production d'huile d'olive</td></tr>
+<tr><td>Méthodologie</td><td>Scrum</td></tr>
+<tr><td>Version document</td><td>1.0</td></tr>
+<tr><td>Date</td><td>Mai 2026</td></tr>
+<tr><td>Product Owner</td><td>Étudiant PFE</td></tr>
+<tr><td>Équipe</td><td>1 développeur full-stack</td></tr>
+</table>
+</div>
+
+<!-- ============ VISION ============ -->
+<div class="page-break"></div>
+<h1>1. Vision produit</h1>
+
+<div class="box">
+<strong>Vision :</strong> Construire la plateforme de pilotage opérationnel d'une usine agroalimentaire &mdash; centrée sur la maintenance, mais couvrant l'ensemble des fonctions qui en dépendent (production, qualité HACCP, achats, sécurité) &mdash; afin d'assurer la disponibilité maximale des équipements et la traçabilité totale de la matière première à la bouteille.
+</div>
+
+<h3>Proposition de valeur</h3>
+<ul>
+<li><strong>Pour l'admin :</strong> un poste de pilotage unique avec KPI temps réel (TRS, MTBF, MTTR), conformité HACCP automatique, et workflow d'achat sécurisé.</li>
+<li><strong>Pour le technicien :</strong> ses ordres de travail au format Kanban, dictée vocale offline (Whisper IA), photos avant/après, scanner QR, et procédures guidées pas-à-pas.</li>
+<li><strong>Pour l'opérateur :</strong> une interface arabe RTL ultra-simple avec gros boutons : panique, défaut qualité, demande de pause, EPI manquants, compteur de production en temps réel.</li>
+</ul>
+
+<h3>Différenciateurs clés</h3>
+<ul>
+<li><strong>Synchronisation temps réel</strong> entre tous les postes (30+ tables via Supabase Realtime).</li>
+<li><strong>Auto-update sans IT</strong> &mdash; bannière in-app + relance, livraison via Supabase Storage.</li>
+<li><strong>Capacités offline-friendly</strong> &mdash; Whisper IA bundled (240 Mo), lecture QR locale, modèles IA dans <code>public/models/</code>.</li>
+<li><strong>Audit-grade</strong> &mdash; chaque création, modification, suppression tracée avec auteur + horodatage.</li>
+<li><strong>Multilingue</strong> &mdash; FR (admin/tech) + AR/RTL (opérateur) + EN.</li>
+</ul>
+
+<!-- ============ PERSONAS ============ -->
+<div class="page-break"></div>
+<h1>2. Personas</h1>
+
+<div class="persona persona-admin">
+<h3 style="margin-top: 0;">Mustapha &mdash; Responsable maintenance &amp; qualité (Admin)</h3>
+<p><span class="label">Profil :</span> 15 ans d'expérience, formé HACCP/ISO 22000, pilote toute la maintenance + la conformité.</p>
+<p><span class="label">Objectifs :</span> Garantir &gt; 95 % de disponibilité des lignes, préparer audits IFS/ISO, contrôler les budgets.</p>
+<p><span class="label">Frustrations actuelles :</span> Données éparpillées sur Excel et papier, perte d'historique, calculs OEE manuels, audit chronophage.</p>
+<p><span class="label">Outils précédents :</span> Excel, fichiers Word, échanges WhatsApp.</p>
+</div>
+
+<div class="persona persona-tech">
+<h3 style="margin-top: 0;">Ahmed &mdash; Technicien polyvalent (Technicien)</h3>
+<p><span class="label">Profil :</span> 8 ans, habilité B1V/BR, gants/EPI au quotidien, souvent sur le terrain.</p>
+<p><span class="label">Objectifs :</span> Résoudre les pannes vite et bien, ne rien oublier dans le rapport, retrouver les procédures techniques rapidement.</p>
+<p><span class="label">Frustrations actuelles :</span> Saisie au clavier difficile (gants), oubli de pièces, perte de temps à chercher la fiche machine.</p>
+<p><span class="label">Outils précédents :</span> Cahier papier, téléphone pour photo.</p>
+</div>
+
+<div class="persona persona-op">
+<h3 style="margin-top: 0;">Karim &mdash; Opérateur ligne de remplissage (Opérateur)</h3>
+<p><span class="label">Profil :</span> 3 ans, arabophone, faible littératie numérique, posté en 3&times;8.</p>
+<p><span class="label">Objectifs :</span> Signaler une panne en 15 sec, suivre son objectif de production, ne pas être bloqué par un EPI manquant.</p>
+<p><span class="label">Frustrations actuelles :</span> Téléphone à utiliser pour appeler le tech, attente, perte de production.</p>
+<p><span class="label">Outils précédents :</span> Aucun &mdash; tout passe par appels et papier.</p>
+</div>
+
+<!-- ============ EPICS ============ -->
+<div class="page-break"></div>
+<h1>3. Epics (regroupements thématiques)</h1>
+
+<table>
+<tr><th style="width: 8%;">ID</th><th style="width: 32%;">Epic</th><th>Objectif</th></tr>
+<tr><td class="epic-id">E1</td><td>Authentification &amp; synchronisation</td><td>Login multi-rôle, profil, sync temps réel 30+ tables, audit auteur.</td></tr>
+<tr class="alt"><td class="epic-id">E2</td><td>Gestion des actifs &amp; interventions</td><td>CRUD machines, QR codes, OT correctifs et préventifs, rapport avec chrono/photo/dictée.</td></tr>
+<tr><td class="epic-id">E3</td><td>Maintenance préventive &amp; prédictive</td><td>Plans récurrents, génération auto, suggestion préventif depuis intervention, RUL prédictif.</td></tr>
+<tr class="alt"><td class="epic-id">E4</td><td>Approvisionnement &amp; stock</td><td>Workflow SAP : Demande &rarr; AO &rarr; Devis &rarr; BC &rarr; Réception &mdash; multi-lignes, multi-fournisseurs.</td></tr>
+<tr><td class="epic-id">E5</td><td>Conformité HACCP &amp; étalonnage</td><td>Contrôles sanitaires, étalonnage avec alertes d'expiration, check-lists OT, journal d'audit immuable.</td></tr>
+<tr class="alt"><td class="epic-id">E6</td><td>Sécurité &amp; habilitations</td><td>LOTO digital, habilitations B1V/BR/chimique/espaces confinés avec alertes 60 j.</td></tr>
+<tr><td class="epic-id">E7</td><td>Continuité &amp; documentation</td><td>Carnet de quart 3&times;8, base de connaissances CRUD, procédure guidée pas-à-pas.</td></tr>
+<tr class="alt"><td class="epic-id">E8</td><td>Production &amp; traçabilité</td><td>Lots HACCP, compteur production target vs réel, photos qualité par lot.</td></tr>
+<tr><td class="epic-id">E9</td><td>Pilotage admin &amp; KPI</td><td>Dashboard global, TRS/OEE, statistiques techniciens, synoptique, salle de contrôle, énergie, rapports.</td></tr>
+<tr class="alt"><td class="epic-id">E10</td><td>Interface opérateur RTL</td><td>Tableau arabe simplifié, panique, défaut qualité, relais, EPI, acquittement consignes.</td></tr>
+<tr><td class="epic-id">E11</td><td>Communication terrain</td><td>Consignes du jour acquittables, demandes opérateurs centralisées admin.</td></tr>
+<tr class="alt"><td class="epic-id">E12</td><td>Déploiement &amp; mises à jour</td><td>Installeur Windows, launcher C# auto-update, notification in-app de mise à jour.</td></tr>
+<tr><td class="epic-id">E13</td><td>Expérience utilisateur</td><td>Sidebar groupée (popovers hover), tutoriel interactif spotlight, thème clair/sombre, multilingue FR/AR/EN.</td></tr>
+<tr class="alt"><td class="epic-id">E14</td><td>Évolutions futures</td><td>Mobile/PWA, offline write queue, IA assistant KB, intégration capteurs Modbus.</td></tr>
+</table>
+
+<!-- ============ DEFINITION OF READY / DONE ============ -->
+<h1>4. Critères de qualité</h1>
+
+<h3>Definition of Ready (DoR) &mdash; story prête à entrer en sprint</h3>
+<ul>
+<li>User story rédigée au format <em>« En tant que [rôle], je veux [action], afin de [bénéfice] »</em></li>
+<li>Critères d'acceptation listés (minimum 2)</li>
+<li>Effort estimé (XS / S / M / L)</li>
+<li>Priorité MoSCoW assignée (Must / Should / Could / Won't)</li>
+<li>Dépendances identifiées (ex. table SQL, type TypeScript)</li>
+<li>Mockup ou référence visuelle si UI</li>
+</ul>
+
+<h3>Definition of Done (DoD) &mdash; story considérée livrée</h3>
+<ul>
+<li>Code TypeScript écrit sans erreur, type-check propre (<code>npx tsc --noEmit</code>)</li>
+<li>Build production réussi (<code>npm run build</code>)</li>
+<li>Migration SQL idempotente (<code>create table if not exists</code>, <code>add column if not exists</code>)</li>
+<li>Realtime + RLS + grants appliqués sur les nouvelles tables</li>
+<li>CRUD passe par <code>auditWrap</code> &mdash; trace dans le journal d'audit</li>
+<li>DataContext mis à jour : fetch + subscription + provider state</li>
+<li>db.ts : wrapper CRUD typé via <code>makeCrud&lt;T&gt;</code></li>
+<li>Traduction FR/AR/EN ajoutée pour les libellés utilisateur</li>
+<li>Tag <code>data-tour="..."</code> ajouté si la fonctionnalité doit apparaître dans le tutoriel</li>
+<li>Publication via <code>Publier la mise a jour.bat</code> (build &rarr; ZIP &rarr; Supabase Storage)</li>
+</ul>
+
+<!-- ============ PRODUCT BACKLOG TABLE ============ -->
+<div class="page-break"></div>
+<h1>5. Product Backlog &mdash; détail des user stories</h1>
+
+<p><span class="label">Légende priorité :</span>
+<span class="priority-must">MUST</span> = indispensable &nbsp;
+<span class="priority-should">SHOULD</span> = important &nbsp;
+<span class="priority-could">COULD</span> = nice-to-have</p>
+
+<p><span class="label">Légende effort :</span> XS &lt; 0.5 j &middot; S &asymp; 0.5&ndash;1 j &middot; M &asymp; 1&ndash;3 j &middot; L &gt; 3 j</p>
+
+<h2>E1 — Authentification &amp; synchronisation</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-001</td><td>En tant qu'utilisateur, je veux me connecter avec email + mot de passe, afin d'accéder à l'interface correspondant à mon rôle.</td><td>3 rôles supportés (admin / tech / op). Redirection automatique vers le bon dashboard. Session persistée via Supabase.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S2</td></tr>
+<tr class="alt"><td class="epic-id">US-002</td><td>En tant qu'utilisateur connecté, je veux me déconnecter, afin de sécuriser ma session.</td><td>Bouton « Déconnexion » dans la sidebar. Session Supabase invalidée. Redirection vers la page de login.</td><td><span class="priority-must">MUST</span></td><td class="effort">XS</td><td><span class="status-done">Terminé</span></td><td>S2</td></tr>
+<tr><td class="epic-id">US-003</td><td>En tant qu'utilisateur, je veux modifier mon profil (photo, contact), afin que mes collègues me reconnaissent.</td><td>Slide-over depuis l'avatar. Avatar upload, email, téléphone, langue, thème. Sauvegarde temps réel.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S2</td></tr>
+<tr class="alt"><td class="epic-id">US-004</td><td>En tant qu'utilisateur multi-poste, je veux que toute modification apparaisse instantanément chez mes collègues, afin de garantir cohérence et continuité.</td><td>30+ tables abonnées via Supabase Realtime. INSERT/UPDATE/DELETE propagés en &lt; 1 sec. Pas besoin de F5.</td><td><span class="priority-must">MUST</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S2</td></tr>
+</table>
+
+<h2>E2 — Gestion des actifs &amp; interventions</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-005</td><td>En tant qu'admin, je veux créer, modifier et supprimer une machine, afin de tenir un inventaire à jour des équipements.</td><td>Code, nom, type, atelier, criticité, coût horaire d'arrêt, manuel PDF, image. QR code généré automatiquement.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S1</td></tr>
+<tr class="alt"><td class="epic-id">US-006</td><td>En tant qu'admin ou technicien, je veux consulter la fiche détaillée d'une machine et son historique, afin de préparer une intervention.</td><td>Route <code>/machines/[id]</code>. Données techniques, pièces liées, historique des interventions, MTBF/MTTR.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S1</td></tr>
+<tr><td class="epic-id">US-007</td><td>En tant qu'admin, je veux créer et assigner un ordre de travail à un technicien, afin de planifier la résolution d'une panne.</td><td>4 types (correctif / préventif / conditionnel / amélioratif). Assignation par drag-or-select. Statuts : planifiée / en cours / terminée / clôturée / annulée.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S1</td></tr>
+<tr class="alt"><td class="epic-id">US-008</td><td>En tant que technicien, je veux remplir le rapport d'intervention avec chrono, photos, pièces utilisées, afin de tracer mon travail sans paperasse.</td><td>Chrono start/pause/reset persisté localStorage. Photos avant/après. Searchable combobox pour pièces. Déduction stock automatique.</td><td><span class="priority-must">MUST</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S7</td></tr>
+<tr><td class="epic-id">US-009</td><td>En tant que technicien, je veux dicter mon rapport au lieu de l'écrire, afin de gagner du temps avec des gants.</td><td>Whisper IA local (240 Mo bundled). Boutons micro sur chaque textarea. Transcription française offline.</td><td><span class="priority-must">MUST</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S7</td></tr>
+<tr class="alt"><td class="epic-id">US-010</td><td>En tant que technicien, je veux prendre une photo « avant » au démarrage de l'intervention, afin d'analyser la cause racine plus tard.</td><td>Prompt bleu sous le chrono. Tag <code>phase: 'before'</code> sur l'attachment JSONB. Pastille AVANT/APRÈS sur les vignettes.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">XS</td><td><span class="status-done">Terminé</span></td><td>S10</td></tr>
+<tr><td class="epic-id">US-011</td><td>En tant que technicien, je veux scanner le QR code physique d'une machine, afin d'identifier instantanément l'équipement sans saisie manuelle.</td><td>Caméra du téléphone, jsQR local. Fallback « Importer une image » pour mauvaise lumière. Fiche machine ouverte automatiquement.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S7</td></tr>
+<tr class="alt"><td class="epic-id">US-012</td><td>En tant qu'admin, je veux que le statut d'une machine se mette à jour automatiquement quand un OT est créé/clôturé, afin d'avoir un état du parc fidèle.</td><td>Statuts : opérationnelle / en panne / en maintenance / arrêtée. Transitions automatiques sur changement OT.</td><td><span class="priority-must">MUST</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S1</td></tr>
+</table>
+
+<h2>E3 — Préventif &amp; prédictif</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-013</td><td>En tant qu'admin, je veux définir un plan préventif récurrent (graissage, contrôle), afin de prévenir les pannes.</td><td>Machine + fréquence (jours) + type d'intervention. Affichage des plans actifs avec date d'échéance.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S5</td></tr>
+<tr class="alt"><td class="epic-id">US-014</td><td>En tant qu'admin, je veux que les OT préventifs se génèrent automatiquement à échéance, afin de ne pas devoir y penser.</td><td>Job réveille à la date due, crée l'intervention liée au plan, met à jour <code>nextDueDate</code>.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S5</td></tr>
+<tr><td class="epic-id">US-015</td><td>En tant que technicien (T5), je veux planifier un préventif récurrent depuis l'écran de clôture d'intervention, afin de fermer la boucle « j'ai réparé, schédulons le contrôle ».</td><td>Carte orange post-clôture. Choix fréquence 15/30/60/90 j. Préventif créé avec contexte (machine, cause).</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S10</td></tr>
+<tr class="alt"><td class="epic-id">US-016</td><td>En tant que technicien (T6), je veux dérouler une fiche de la base de connaissances en mode guidé pas-à-pas, afin de ne sauter aucune étape.</td><td>Route <code>/technician/procedure</code>. Parsing markdown article &rarr; étapes. Chrono par étape, note optionnelle, persistance dans <code>procedure_runs</code>.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S10</td></tr>
+<tr><td class="epic-id">US-017</td><td>En tant qu'admin, je veux voir une liste des machines à risque de panne dans les 4&ndash;6 semaines, afin d'anticiper.</td><td>Heuristique RUL basée sur historique des interventions + MTBF. Recommandation d'action.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S4</td></tr>
+</table>
+
+<h2>E4 — Approvisionnement</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-018</td><td>En tant qu'admin, je veux émettre une demande d'achat multi-lignes, afin de regrouper plusieurs pièces sur une même requête.</td><td>En-tête + lignes JSONB. Statuts : brouillon &rarr; soumise &rarr; approuvée &rarr; convertie / rejetée.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S3</td></tr>
+<tr class="alt"><td class="epic-id">US-019</td><td>En tant qu'admin, je veux lancer un appel d'offres (RFQ) à plusieurs fournisseurs depuis une demande approuvée, afin de comparer les devis.</td><td>RFQ avec lignes itemisées. Statut ouverte / clôturée. Lien vers requisition d'origine.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S3</td></tr>
+<tr><td class="epic-id">US-020</td><td>En tant qu'admin, je veux saisir les devis reçus et comparer les prix ligne par ligne, afin de retenir le meilleur fournisseur.</td><td>Quotes avec lignes. Tableau comparatif. Statut : en attente / reçu / refusé / retenu.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S3</td></tr>
+<tr class="alt"><td class="epic-id">US-021</td><td>En tant qu'admin, je veux générer un bon de commande depuis le devis retenu, afin de formaliser l'achat.</td><td>PO avec lignes. Statuts : brouillon / envoyée / partielle / réceptionnée. Approval workflow.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S3</td></tr>
+<tr><td class="epic-id">US-022</td><td>En tant qu'admin, je veux enregistrer la réception d'une commande (GRN), afin de mettre à jour le stock et détecter écarts.</td><td>Lignes avec qté reçue + condition (conforme/endommagé/manquant). Stock mis à jour automatiquement.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S3</td></tr>
+<tr class="alt"><td class="epic-id">US-023</td><td>En tant que technicien (T4), je veux demander une pièce en 5 sec depuis l'inventaire, afin de ne pas perdre de temps à naviguer.</td><td>Bouton « Demander » par ligne. Modal pré-rempli : qté suggérée, urgence, contexte machine. PR créée automatiquement.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S10</td></tr>
+<tr><td class="epic-id">US-024</td><td>En tant qu'admin, je veux gérer mon catalogue de fournisseurs (contact, fiabilité, délai moyen), afin d'éclairer mes choix de sourcing.</td><td>CRUD fournisseurs. Champs : nom, contact, email, téléphone, jours livraison, fiabilité 0&ndash;100.</td><td><span class="priority-must">MUST</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S3</td></tr>
+<tr class="alt"><td class="epic-id">US-025</td><td>En tant qu'admin, je veux gérer le stock des pièces de rechange avec seuils mini, afin d'éviter la rupture qui arrête la ligne.</td><td>CRUD pièces. Référence, quantité, seuil, coût unitaire, machine associée. Alertes stock critique.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S1</td></tr>
+<tr><td class="epic-id">US-026</td><td>En tant qu'admin, je veux que le système crée automatiquement une demande d'achat quand un stock passe sous le seuil, afin d'anticiper.</td><td>AlertWatcher tourne en background. Crée PR REQ-A-... avec qté = 2&times; seuil &mdash; quantité actuelle.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S5</td></tr>
+</table>
+
+<h2>E5 — Conformité HACCP &amp; étalonnage</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-027</td><td>En tant qu'admin, je veux enregistrer un contrôle HACCP sur une machine, afin de prouver la conformité lors d'un audit.</td><td>Type : sanitation / calibration / lubrification / inspection. Résultat : conforme / non conforme / à corriger.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S5</td></tr>
+<tr class="alt"><td class="epic-id">US-028</td><td>En tant qu'admin, je veux suivre les certificats d'étalonnage des instruments, afin d'être alerté avant expiration.</td><td>CRUD calibration_records. Types : température / pression / pesage / débit / pH / humidité. Alerte 60 j avant échéance.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S5</td></tr>
+<tr><td class="epic-id">US-029</td><td>En tant qu'admin, je veux créer des modèles de check-lists réutilisables (démarrage, nettoyage), afin de standardiser les opérations.</td><td>Modèle = liste d'items JSONB. Le tech le déroule étape par étape avec validation.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S5</td></tr>
+<tr class="alt"><td class="epic-id">US-030</td><td>En tant qu'admin, je veux consulter le journal d'audit immuable de toutes les modifications, afin d'être prêt pour les audits ISO.</td><td>Append-only via <code>auditWrap</code>. Filtres : auteur, entité, période. 500 lignes max chargées (pagination).</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S5</td></tr>
+</table>
+
+<h2>E6 — Sécurité &amp; habilitations</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-031</td><td>En tant que technicien (T3), je veux consigner numériquement une machine pendant mon intervention, afin d'éviter qu'un collègue ne la redémarre par erreur.</td><td>Machine + n° cadenas + motif + horodatage. Statut « consignée par X ». Levée par le même tech ou admin.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S8</td></tr>
+<tr class="alt"><td class="epic-id">US-032</td><td>En tant qu'admin (T7), je veux enregistrer les habilitations de mes techniciens (B1V, BR, chimique, espaces confinés) avec date d'expiration, afin de ne pas en assigner un non-habilité.</td><td>CRUD tech_certifications. KPI : valides / expirent &lt; 60 j / expirées. Alerte 60 j avant échéance.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S10</td></tr>
+</table>
+
+<h2>E7 — Continuité &amp; documentation</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-033</td><td>En tant que technicien (T1), je veux laisser une note pour la prochaine équipe (3&times;8), afin d'assurer la continuité.</td><td>Compose avec priorité (info/warning/critical) + machine + dictée vocale. Marquage « pris en charge ».</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S8</td></tr>
+<tr class="alt"><td class="epic-id">US-034</td><td>En tant qu'admin, je veux créer/modifier/supprimer des fiches de procédure (CRUD KB), afin de capitaliser le savoir technique.</td><td>Markdown : <code>**Titre**</code> pour les sections. Catégories : procédure / dépannage / sécurité / étalonnage.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S7</td></tr>
+</table>
+
+<h2>E8 — Production &amp; traçabilité</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-035</td><td>En tant qu'opérateur (O1), je veux déclarer une dépoche de production (n° lot, produit, machine, qté prévue), afin d'assurer la traçabilité HACCP.</td><td>Création depuis dashboard opérateur ou page <code>/production-batches</code>. Liaison automatique à l'opérateur connecté.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S8</td></tr>
+<tr class="alt"><td class="epic-id">US-036</td><td>En tant qu'opérateur (O2), je veux compter +1/+10 chaque bouteille produite, afin de suivre mon objectif de shift.</td><td>Boutons +1, +10, &minus;1 sur la carte « dépoche en cours ». Barre de progression. Comparaison qté prévue.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S11</td></tr>
+<tr><td class="epic-id">US-037</td><td>En tant qu'opérateur (O6), je veux prendre des photos qualité de mes échantillons aléatoires, afin d'apporter une preuve visuelle par dépoche.</td><td>Caméra par dépoche. Photos compressées en JPEG (200 Ko). Stockage JSONB <code>qualityPhotos</code> sur le lot. Suppression possible.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S11</td></tr>
+</table>
+
+<h2>E9 — Pilotage admin &amp; KPI</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-038</td><td>En tant qu'admin, je veux un dashboard d'accueil avec KPI globaux, afin de voir l'état de l'usine en 5 sec.</td><td>Cartes : machines opérationnelles / en panne, OT en cours, MTBF/MTTR moyens, coût mensuel. Filtre par atelier.</td><td><span class="priority-must">MUST</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S4</td></tr>
+<tr class="alt"><td class="epic-id">US-039</td><td>En tant qu'admin, je veux voir le TRS/OEE de chaque machine, afin d'identifier le facteur limitant (dispo / perf / qualité).</td><td>Calcul : Disponibilité &times; Performance &times; Qualité. Drill-down par machine avec décomposition.</td><td><span class="priority-must">MUST</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S4</td></tr>
+<tr><td class="epic-id">US-040</td><td>En tant que technicien (T2), je veux voir mes statistiques personnelles, afin de mesurer ma performance et préparer l'entretien annuel.</td><td>Interventions ce mois, MTTR moyen, top 3 machines, répartition correctif/préventif.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S10</td></tr>
+<tr class="alt"><td class="epic-id">US-041</td><td>En tant qu'admin, je veux un synoptique visuel de l'usine, afin de comprendre instantanément où est le goulot d'étranglement.</td><td>Plan process : réception &rarr; préparation &rarr; production &rarr; remplissage &rarr; conditionnement &rarr; expédition. Codes couleur live.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S4</td></tr>
+<tr><td class="epic-id">US-042</td><td>En tant qu'admin, je veux une salle de contrôle plein écran, afin de l'afficher sur un mur d'usine.</td><td>Page sans interactions. Auto-refresh. Alertes en couleur. Compatible 4K/full-screen.</td><td><span class="priority-could">COULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S4</td></tr>
+<tr class="alt"><td class="epic-id">US-043</td><td>En tant qu'admin, je veux suivre la consommation énergétique par machine et son coût, afin d'identifier les surconsommateurs.</td><td>Lecture seule. Comparaison machines, calcul coût + CO2.</td><td><span class="priority-could">COULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S4</td></tr>
+<tr><td class="epic-id">US-044</td><td>En tant qu'admin, je veux générer des rapports analytiques exportables (PDF/Excel), afin de préparer les réunions de direction.</td><td>Pareto pannes, top machines coûteuses, évolution mensuelle. Choix période. Export.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S4</td></tr>
+<tr class="alt"><td class="epic-id">US-045</td><td>En tant qu'admin, je veux gérer mon annuaire personnel (techniciens, opérateurs), afin d'avoir une source unique de vérité.</td><td>CRUD personnel. Rôle, spécialité, contact, photo, statut. Création de compte Supabase.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S2</td></tr>
+</table>
+
+<h2>E10 — Interface opérateur RTL</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-046</td><td>En tant qu'opérateur, je veux une interface en arabe RTL avec gros boutons, afin de l'utiliser facilement sans formation.</td><td>Tous les libellés en arabe. Layout RTL. Boutons &gt; 60 px. Polices &gt; 14 pt.</td><td><span class="priority-must">MUST</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S6</td></tr>
+<tr class="alt"><td class="epic-id">US-047</td><td>En tant qu'opérateur, je veux un gros bouton rouge pour déclarer une panne en 15 sec, afin d'alerter le technicien immédiatement.</td><td>Wizard 3 étapes : machine &rarr; type problème &rarr; photo + envoi. SMS-style flow.</td><td><span class="priority-must">MUST</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S6</td></tr>
+<tr><td class="epic-id">US-048</td><td>En tant qu'opérateur, je veux signaler un défaut qualité avec photo, afin de prévenir la diffusion de produits non conformes.</td><td>Bouton violet « défaut qualité ». Photo + catégorie défaut. Lié au lot en cours.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S6</td></tr>
+<tr class="alt"><td class="epic-id">US-049</td><td>En tant qu'opérateur (O3), je veux demander une pause/relais en un clic, afin de ne pas laisser la ligne sans surveillance.</td><td>Bouton teal sur le dashboard. Notification cloche admin. Statut : en attente / accepté / refusé.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S11</td></tr>
+<tr><td class="epic-id">US-050</td><td>En tant qu'opérateur (O4), je veux signaler un EPI cassé ou consommable manquant, afin d'être réapprovisionné rapidement.</td><td>Bouton orange. Catégorie : EPI / consommable. Texte libre + urgence + envoi admin.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S11</td></tr>
+</table>
+
+<h2>E11 — Communication terrain</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-051</td><td>En tant qu'admin (O5), je veux publier une consigne du jour que chaque opérateur doit acquitter, afin de garantir l'alignement.</td><td>Page <code>/directives</code>. Bannière jaune verrouillante sur dashboard opérateur jusqu'à acquittement. Suivi des accusés.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S11</td></tr>
+<tr class="alt"><td class="epic-id">US-052</td><td>En tant qu'admin, je veux une vue unifiée des demandes opérateurs (relais + EPI), afin de les traiter rapidement.</td><td>Page <code>/operator-requests</code>. 2 onglets. Actions : accepter / refuser / marquer traité.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S11</td></tr>
+<tr><td class="epic-id">US-053</td><td>En tant qu'admin, je veux recevoir des alertes email pour les événements critiques (stock zéro, OT en retard), afin de ne pas devoir surveiller en permanence.</td><td>AlertWatcher background. Resend API. Configuration seuils + destinataires. Gating admin pour éviter doublons.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S5</td></tr>
+</table>
+
+<h2>E12 — Déploiement &amp; mises à jour</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-054</td><td>En tant qu'administrateur IT, je veux un installeur Windows simple (clic-clic-clic), afin de déployer sur n'importe quelle machine sans expertise.</td><td>Inno Setup, install per-user, pas besoin de droits admin. Inclus model Whisper 240 Mo.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S9</td></tr>
+<tr class="alt"><td class="epic-id">US-055</td><td>En tant qu'utilisateur, je veux que l'app se mette à jour automatiquement au prochain lancement, afin d'avoir toujours la dernière version.</td><td>Launcher C# vérifie version Supabase Storage, télécharge app.zip si nouveau, applique avant de démarrer Node.</td><td><span class="priority-must">MUST</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S9</td></tr>
+<tr><td class="epic-id">US-056</td><td>En tant qu'utilisateur, je veux être notifié in-app qu'une nouvelle version est dispo (sans fermer l'app), afin de ne pas rater une mise à jour.</td><td>UpdateNotifier composant. Polling 60 sec sur version.txt. Bannière bleue dismissible.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S9</td></tr>
+</table>
+
+<h2>E13 — Expérience utilisateur</h2>
+<table>
+<tr><th>ID</th><th>User Story</th><th>Critères d'acceptation</th><th>Priorité</th><th>Effort</th><th>Statut</th><th>Sprint</th></tr>
+<tr><td class="epic-id">US-057</td><td>En tant qu'utilisateur, je veux une sidebar groupée en modules (popovers au survol), afin de ne pas être noyé sous 25+ liens.</td><td>Groupes : Maintenance / Performance / Conformité / Équipe / Approvisionnement / Système. Popover floating-right sur hover.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">M</td><td><span class="status-done">Terminé</span></td><td>S9</td></tr>
+<tr class="alt"><td class="epic-id">US-058</td><td>En tant que nouveau utilisateur, je veux un tutoriel interactif qui me montre chaque fonctionnalité une par une, afin d'être autonome rapidement.</td><td>Spotlight + popover. Navigation auto entre pages. Steps par rôle (admin 27, tech 12, op 10). Une fois par utilisateur par machine.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">L</td><td><span class="status-done">Terminé</span></td><td>S11</td></tr>
+<tr><td class="epic-id">US-059</td><td>En tant qu'utilisateur, je veux pouvoir rejouer le tutoriel à tout moment, afin de revoir une fonctionnalité que j'ai oubliée.</td><td>Bouton « Revoir le tutoriel » dans Paramètres + slide-over profil. Reset localStorage + event dispatch.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">XS</td><td><span class="status-done">Terminé</span></td><td>S11</td></tr>
+<tr class="alt"><td class="epic-id">US-060</td><td>En tant qu'utilisateur, je veux basculer entre thème clair et sombre, afin de m'adapter à mon environnement.</td><td>Settings : light / dark / system. Persistance localStorage. Variables CSS.</td><td><span class="priority-could">COULD</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S4</td></tr>
+<tr><td class="epic-id">US-061</td><td>En tant qu'utilisateur, je veux zoomer/dézoomer l'interface (Ctrl +/-), afin d'adapter à la taille d'écran.</td><td>6 niveaux : 70 / 80 / 90 / 100 / 110 / 125 %. Persistance. Boutons Header.</td><td><span class="priority-could">COULD</span></td><td class="effort">S</td><td><span class="status-done">Terminé</span></td><td>S4</td></tr>
+</table>
+
+<!-- ============ FUTUR ============ -->
+<div class="page-break"></div>
+<h1>6. Backlog futur — évolutions identifiées</h1>
+
+<p>Ces user stories ne sont pas planifiées pour le PFE actuel mais identifiées comme évolutions à fort impact business.</p>
+
+<table>
+<tr><th>ID</th><th>User Story</th><th>Bénéfice</th><th>Priorité</th><th>Effort</th><th>Statut</th></tr>
+<tr><td class="epic-id">US-F01</td><td>Mobile / PWA : version installable sur tablette Android utilisée sur la ligne.</td><td>Opérateurs cessent de partager un PC fixe ; QR scanner 10&times; plus utilisable.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-future">Futur</span></td></tr>
+<tr class="alt"><td class="epic-id">US-F02</td><td>Offline write queue (IndexedDB) : les mutations partent dans une file quand le réseau est coupé, puis se synchronisent.</td><td>Plus aucune action perdue par micro-coupure réseau.</td><td><span class="priority-must">MUST</span></td><td class="effort">M</td><td><span class="status-future">Futur</span></td></tr>
+<tr><td class="epic-id">US-F03</td><td>Assistant IA base de connaissances : « pourquoi REM-001 fuit au démarrage ? » &rarr; réponse citant interventions passées.</td><td>Capture le savoir des seniors ; débloque les juniors la nuit.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">L</td><td><span class="status-future">Futur</span></td></tr>
+<tr class="alt"><td class="epic-id">US-F04</td><td>Intégration capteurs Modbus / OPC-UA : vibration, température, courant streamés dans <code>production_metrics</code>.</td><td>Prédictif réel (4&ndash;6 sem avant panne) plutôt qu'historique.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">L</td><td><span class="status-future">Futur</span></td></tr>
+<tr><td class="epic-id">US-F05</td><td>Optimiseur d'assignation OT : suggère le bon tech selon habilitations + workload + perf passée.</td><td>Économise 30 min/jour à l'admin, prévient les accidents non-habilité.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">M</td><td><span class="status-future">Futur</span></td></tr>
+<tr class="alt"><td class="epic-id">US-F06</td><td>Calendrier conformité unifié : HACCP + étalonnage + préventif + habilitations dans une vue mensuelle.</td><td>Plus d'audit raté pour cause de tâche oubliée.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-future">Futur</span></td></tr>
+<tr><td class="epic-id">US-F07</td><td>Photo-défaut IA classifier : modèle CV embarqué label les photos qualité (étiquette / bouchon / niveau / fuite).</td><td>Routage instantané. Trend analysis qualité.</td><td><span class="priority-could">COULD</span></td><td class="effort">M</td><td><span class="status-future">Futur</span></td></tr>
+<tr class="alt"><td class="epic-id">US-F08</td><td>Kits de maintenance : bundles de pièces prédéfinis (kit étanchéité POM-001). Une demande = tout le kit.</td><td>Demande de 3 min &rarr; 5 sec ; juniors n'oublient pas le joint obscur.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-future">Futur</span></td></tr>
+<tr><td class="epic-id">US-F09</td><td>Notifications WhatsApp/SMS pour événements critiques : directive, machine critique, panique.</td><td>Touche les opérateurs là où ils sont déjà ; complète bannière in-app.</td><td><span class="priority-should">SHOULD</span></td><td class="effort">S</td><td><span class="status-future">Futur</span></td></tr>
+<tr class="alt"><td class="epic-id">US-F10</td><td>Cost center / budget atelier : budget annuel par atelier, burn-down temps réel, alerte sur dépassement.</td><td>Défense du budget maintenance face à la finance avec données.</td><td><span class="priority-could">COULD</span></td><td class="effort">M</td><td><span class="status-future">Futur</span></td></tr>
+<tr><td class="epic-id">US-F11</td><td>Multi-site : segregation par site, analytics cross-sites.</td><td>Permet d'adresser les groupes industriels.</td><td><span class="priority-could">COULD</span></td><td class="effort">L</td><td><span class="status-future">Futur</span></td></tr>
+<tr class="alt"><td class="epic-id">US-F12</td><td>Wearables / voice-only opérateur : « j'ai fait 50 bouteilles » &rarr; compteur s'actualise.</td><td>Opérateurs avec gants peuvent updater sans toucher l'écran.</td><td><span class="priority-could">COULD</span></td><td class="effort">M</td><td><span class="status-future">Futur</span></td></tr>
+</table>
+
+<!-- ============ FOOTER ============ -->
+<div class="page-break"></div>
+<h1>7. Synthèse</h1>
+
+<div class="box">
+<p><strong>Statut au 25 mai 2026 :</strong></p>
+<ul>
+<li><strong>61 user stories</strong> livrées sur 12 sprints &mdash; couverture complète des 13 epics « cœur »</li>
+<li><strong>12 user stories</strong> identifiées comme évolutions futures (E14)</li>
+<li><strong>0 bug critique connu</strong> &mdash; audit statique complet de chaque CRUD (table &rarr; type &rarr; DataContext &rarr; db.ts &rarr; page) validé</li>
+<li><strong>3 rôles, 3 langues, 1 plateforme</strong> &mdash; admin FR, tech FR, opérateur AR/RTL</li>
+<li><strong>Auto-update opérationnel</strong> &mdash; livraison via Supabase Storage, banner in-app de notification</li>
+</ul>
+</div>
+
+<p style="margin-top: 24pt; text-align: center; color: #94a3b8; font-size: 9pt;">&mdash; Fin du document &mdash;</p>
+
+</div>
+</body>
+</html>
